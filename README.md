@@ -15,6 +15,8 @@ This repo now contains a conservative implementation skeleton:
 - mock provider authorization and execution boundary
 - receipt binding to the original payment intent
 - proof envelope creation and verification
+- IOU ledger issuance and mock settlement records
+- outstanding and settled totals by currency
 
 It still does **not** claim live settlement, wallet custody, or production payment processing.
 
@@ -23,13 +25,15 @@ It still does **not** claim live settlement, wallet custody, or production payme
 npm test
 ```
 
-Expected proof after the implementation skeleton:
+Expected proof after the IOU ledger layer:
 
 ```text
-6 tests
-6 pass
+12 tests
+12 pass
 0 fail
 ```
+
+See `docs/LEDGER.md` for the ledger boundary and next adapter seam.
 
 ## Relationship to Savage Agent Protocol
 
