@@ -16,6 +16,7 @@ This repo now contains a conservative implementation skeleton:
 - receipt binding to the original payment intent
 - proof envelope creation and verification
 - IOU ledger issuance and mock settlement records
+- file-backed ledger persistence for restart-safe IOU records
 - outstanding and settled totals by currency
 
 It still does **not** claim live settlement, wallet custody, or production payment processing.
@@ -28,8 +29,8 @@ npm test
 Expected proof after the IOU ledger layer:
 
 ```text
-12 tests
-12 pass
+16 tests
+16 pass
 0 fail
 ```
 
